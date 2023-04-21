@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">CADASTRO APRISCO</h1>
+        <h2 id="subtitulo">Complete com suas informações</h2>
+    </div>
+    <form>
+        <fieldset class="campo">
+            <div>
+                <label for="nome"><strong>Nome Completo</strong></label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div><br></div>
+            <div>
+                <label for="data"><strong>Data de Nascimento</strong></label>
+                <input type="number" name="data" id="data" required>
+            </div>
+            <div>
+                <label for="endereco"><strong>Endereço</strong></label>
+                <input type="text" name="endereco" id="endereco" required>
+            </div>
+            <div>
+                <label for="numerocasa"><strong>Número</strong></label>
+                <input type="number" name="numero" id="numero" required>
+            </div>
+            <div>
+                <label for="complemento"><strong>Complemento</strong></label>
+                <input type="text" name="complemento" id="complemento" required>
+            </div>
+            <div>
+                <label for="numero"><strong>Número cel</strong></label>
+                <input type="number" name="number" id="number" required>
+            </div>
+            <div><br></div>
+        </fieldset>
+       
+        <div class="campo">
+            <label for="email"><strong> Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="estadocivil"><strong>Estado civil</strong></label>
+            <select id="estadocivil">
+                <option selected disabled value="">Selecione</option>
+                <option>Solteiro</option>
+                <option>Casado</option>
+            </select>
+            <fieldset class="campo">
+                <div>
+                    <br>
+                    <label for="nomeconjuge"><strong>Nome do Cônjuge</strong></label>
+                    <input type="text" name="nomeconjuge" id="nomeconjuge" >
+                </div>
+        </div>
+        <fieldset class="grupo">
+            <div id="checkbox">
+                <label><strong>Selecione quais ministérios está inserido:</strong></label><br><br>
+                <input type="checkbox" id="ministerio1" name="ministerio1" value="geracao">
+                <label for="ministerio1">Geração da Fonte</label>
+                <br>
+                <input type="checkbox" id="ministerio2" name="ministerio2" value="dokmos">
+                <label for="ministerio2">Dokmos</label>
+                <br>
+                <input type="checkbox" id="ministerio3" name="ministerio3" value="atitude">
+                <label for="ministerio3">Atitude</label>
+                <br>
+                <input type="checkbox" id="ministerio4" name="ministerio4" value="familiasabencoadas">
+                <label for="ministerio4">Famílias Abençoadas</label>
+                <br>
+                <input type="checkbox" id="ministerio5" name="ministerio5" value="aprisco">
+                <label for="ministerio5">Aprisco</label>
+                <br>
+                <input type="checkbox" id="ministerio6" name="ministerio6" value="ensino">
+                <label for="ministerio6">Ensino</label>
+                <br>
+                <input type="checkbox" id="ministerio7" name="ministerio7" value="membro">
+                <label for="ministerio7">Apenas Membro</label>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <br>
+            <label><strong>Até qual etapa de ensino você realizou:</strong></label>
+            <label>
+                <input type="radio" name="informacoes" value="d1">D1
+            </label>
+            <label>
+                <input type="radio" name="informacoes" value="d2">D2
+            </label>
+            <label>
+                <input type="radio" name="informacoes" value="d3">D3
+            </label>
+            <label>
+                <input type="radio" name="informacoes" value="d4">D4
+            </label>
+            <label>
+                <input type="radio" name="informacoes" value="d5">D5
+            </label>
+        </div>
+        <div>
+            <br>
+            <label><strong>Pedidos de oração</strong></label>
+            <br>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+        <br>
+        <button class="button" type="submit">Concluído</button>
+    </form>
+</body>
+</html>
